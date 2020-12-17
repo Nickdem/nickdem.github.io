@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const gridDisplay = document.querySelector('.grid')
     const scoreDisplay = document.querySelector('#score')
     const resultDisplay = document.querySelector('#result')
+    const leftBtn = document.querySelector('.left-btn')
+    const upBtn = document.querySelector('.up-btn')
+    const rightBtn = document.querySelector('.right-btn')
+    const downBtn = document.querySelector('.down-btn')
     const width = 4
     let squares = []
     let score = 0
@@ -151,6 +155,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('keyup', control)
 
+    leftBtn.addEventListener('click', keyLeft)
+    upBtn.addEventListener('click', keyUp)
+    rightBtn.addEventListener('click', keyRight)
+    downBtn.addEventListener('click', keyDown)
+
     function keyRight() {
         moveRight()
         combineRow()
@@ -173,6 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function keyUp() {
+        console.log('logup');
         moveUp()
         combineColumn()
         moveUp()
@@ -184,6 +194,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (squares[i].innerHTML == 2048) {
                 resultDisplay.innerHTML = 'You win!'
                 document.removeEventListener('keyup', control)
+                leftBtn.removeEventListener('click', keyLeft)
+                upBtn.removeEventListener('click', keyUp)
+                rightBtn.removeEventListener('click', keyRight)
+                downBtn.removeEventListener('click', keyDown)
             }
         }
     }
@@ -198,6 +212,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (zeros == 0) {
             resultDisplay.innerHTML = 'You Lose!'
             document.removeEventListener('keyup', control)
+            leftBtn.removeEventListener('click', keyLeft)
+            upBtn.removeEventListener('click', keyUp)
+            rightBtn.removeEventListener('click', keyRight)
+            downBtn.removeEventListener('click', keyDown)
         }
     }
 })

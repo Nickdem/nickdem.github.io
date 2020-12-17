@@ -30,3 +30,43 @@
     text-align: center;
     font-weight: bold;
 }
+
+.buttons {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.buttons button {
+    position: absolute;
+    padding: 15px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.left-btn {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.right-btn {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.up-btn {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.down-btn {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

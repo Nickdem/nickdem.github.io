@@ -182,7 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function keyUp() {
-        console.log('logup');
         moveUp()
         combineColumn()
         moveUp()

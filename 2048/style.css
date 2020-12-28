@@ -27,7 +27,7 @@
   height: 20%;
   background-color: #f3f397;
   margin: 10px;
-  font-size: 60px;
+  font-size: 45px;
   text-align: center;
   font-weight: bold;
 }
@@ -80,5 +80,6 @@
 
   .grid div {
     margin: 5px;
+    font-size: 24px;
   }
 }

@@ -1,72 +1,84 @@
 .container {
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
 }
 
 .score-title {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 #score {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 480px;
-    max-height: 480px;
-    background-color: #cc7b7b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 480px;
+  height: 480px;
+  background-color: #cc7b7b;
 }
 
 .grid div {
-    width: 100px;
-    height: 100px;
-    background-color: #f3f397;
-    margin: 10px;
-    font-size: 60px;
-    text-align: center;
-    font-weight: bold;
+  width: 20%;
+  height: 20%;
+  background-color: #f3f397;
+  margin: 10px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .buttons {
-    width: 150px;
-    height: 150px;
-    margin: 10px auto;
-    position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  position: relative;
 }
 
 .buttons button {
-    position: absolute;
-    padding: 15px;
-    border: none;
-    background-color: #000;
-    color: #fff;
-    cursor: pointer;
+  position: absolute;
+  padding: 15px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
 }
 
 .left-btn {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .right-btn {
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 .up-btn {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .down-btn {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 500px) {
+  .grid {
+    width: 300px;
+    height: 300px;
+  }
+
+  .grid div {
+    margin: 5px;
+  }
 }

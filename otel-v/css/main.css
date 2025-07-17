@@ -2598,7 +2598,7 @@ ol {
 .hero__awards-item {
   width: 116px;
   height: 181px;
-  background-image: url(../../../images/awa-bg.svg);
+  background-image: url(../images/awa-bg.svg);
   background-repeat: no-repeat;
   background-size: 116px 181px;
   text-align: center;
@@ -2642,7 +2642,7 @@ ol {
   position: absolute;
   top: -3px;
   right: -3px;
-  background-image: url(../../images/mask-8.svg);
+  background-image: url(../images/mask-8.svg);
   background-size: 68px 68px;
 }
 
@@ -2653,7 +2653,7 @@ ol {
   position: absolute;
   bottom: -3px;
   left: -3px;
-  background-image: url(../../images/mask-4.svg);
+  background-image: url(../images/mask-4.svg);
   background-size: 269.5px 74px;
 }
 
@@ -2801,7 +2801,7 @@ ol {
   width: 202px;
   height: 70px;
   background-size: 202px 70px;
-  background-image: url(../../images/mask-9.svg);
+  background-image: url(../images/mask-9.svg);
   z-index: 0;
   bottom: -2.5px;
   left: -2.5px;
@@ -3331,15 +3331,17 @@ ol {
 }
 
 .breakfast__item-img {
-  width: 220px;
-  height: 212px;
+  width: 48%;
+  height: auto;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 
 .breakfast__item-img img {
-  width: 220px;
-  height: 212px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .breakfast__item-title {
@@ -3355,6 +3357,7 @@ ol {
 
 .breakfast__item-info {
   padding-right: 20px;
+  width: 46%;
 }
 
 .breakfast__row {
@@ -3552,6 +3555,30 @@ ol {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .room-card__equipment {
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-column-gap: normal;
+       -moz-column-gap: normal;
+            column-gap: normal;
+    -webkit-column-gap: initial;
+       -moz-column-gap: initial;
+            column-gap: initial;
+  }
+  .awards__row {
+    width: 100%;
+    overflow-x: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .awards__row::-webkit-scrollbar {
+    display: none;
+  }
+  .awards__item {
+    width: 196px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -3573,6 +3600,11 @@ ol {
     padding-right: 20px;
     padding-bottom: 8px;
     padding-left: 20px;
+  }
+  .room__inner {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 
@@ -3875,6 +3907,29 @@ ol {
   .contacts__block-booking {
     padding: 12px 36px;
   }
+  .room-card__actions {
+    gap: 10px;
+  }
+  .room__thumb {
+    display: none;
+  }
+  .service:nth-child(2n) .service__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .service:nth-child(2n) .service__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0 30px 30px;
+  }
+  .breakfast__item-img {
+    width: 40%;
+  }
+  .banquet__gallery {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -3928,6 +3983,16 @@ ol {
   .gallery-el,
   .gallery-el--small {
     height: 240px;
+  }
+  .contacts__block-btn a {
+    padding: 8px;
+  }
+  .contacts__block-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px;
   }
 }
 

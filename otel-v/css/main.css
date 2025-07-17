@@ -2019,6 +2019,7 @@ ol {
   line-height: 140%;
   font-size: 16px;
   border-bottom: 2px solid transparent;
+  color: #222222;
 }
 
 .tabs-triggers__btn:not(.tabs-triggers__btn--active) {
@@ -2636,24 +2637,24 @@ ol {
 
 .home-room__img::before {
   content: "";
-  width: 66px;
-  height: 66px;
+  width: 68px;
+  height: 68px;
   position: absolute;
-  top: 0;
-  right: 0;
-  background-image: url(../../images/m-square.svg);
-  background-size: 66px 66px;
+  top: -3px;
+  right: -3px;
+  background-image: url(../../images/mask-8.svg);
+  background-size: 68px 68px;
 }
 
 .home-room__img::after {
   content: "";
-  width: 267px;
-  height: 72px;
+  width: 269.5px;
+  height: 74px;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  background-image: url(../../images/m-rectangle.svg);
-  background-size: 267px 72.2px;
+  bottom: -3px;
+  left: -3px;
+  background-image: url(../../images/mask-4.svg);
+  background-size: 269.5px 74px;
 }
 
 .home-room__img img {
@@ -2796,14 +2797,14 @@ ol {
 
 .services-slide__card::before {
   content: "";
-  width: 200px;
-  height: 68px;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  background-image: url(../../images/s-r.svg);
-  background-size: 200px 68.2px;
+  width: 202px;
+  height: 70px;
+  background-size: 202px 70px;
+  background-image: url(../../images/mask-9.svg);
   z-index: 0;
+  bottom: -2.5px;
+  left: -2.5px;
 }
 
 .services-slide__card img {
@@ -3613,7 +3614,7 @@ ol {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 300px;
-    padding: 20px 15px;
+    padding: 20px 15px 70px;
     top: 50px;
     height: calc(100vh - 50px);
     right: -100%;

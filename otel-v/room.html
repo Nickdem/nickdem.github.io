@@ -6,15 +6,38 @@
   <title>Номер</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20250715203637">
-  <script defer="defer" src="js/main.min.js?_v=20250715203637"></script>
+  <link rel="stylesheet" href="css/main.min.css?_v=20250717140124">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css?_v=20250717140124">
+
+  <script defer="defer" src="js/main.min.js?_v=20250717140124"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js?_v=20250717140124"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Fancybox.bind("[data-fancybox]", {
+        Hash: false,
+      });
+      // document.querySelectorAll("section").forEach((sect) => {
+      //   sect.style.display = "none";
+      // });
+
+      // document.querySelector(".hero").style.display = "block";
+      // document.querySelector(".rooms").style.display = "block";
+      // document.querySelector(".about").style.display = "block";
+      // document.querySelector(".breakfasts").style.display = "block";
+      // document.querySelector(".services").style.display = "block";
+      // document.querySelector(".discount").style.display = "block";
+      // document.querySelector(".gallery").style.display = "block";
+      // document.querySelector(".hotels").style.display = "block";
+      // document.querySelector(".contacts").style.display = "block";
+    });
+  </script>
 </head>
 
   <body>
     <header class="header header--inner">
   <div class="container header__inner">
-    <div class="header__logo">
-      <svg class="header__logo-img" width="221" height="22" viewBox="0 0 221 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="logo header__logo">
+      <svg class="logo__img" width="221" height="22" viewBox="0 0 221 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1.2 11C1.2 7.9 2.23 5.32 4.29 3.26C6.37 1.18 9.06 0.14 12.36 0.14C15.62 0.14 18.29 1.13 20.37 3.11C22.47 5.09 23.52 7.72 23.52 11C23.52 14.16 22.46 16.76 20.34 18.8C18.24 20.84 15.58 21.86 12.36 21.86C9.1 21.86 6.42 20.87 4.32 18.89C2.24 16.91 1.2 14.28 1.2 11ZM6.3 11C6.3 12.8 6.89 14.31 8.07 15.53C9.25 16.75 10.68 17.36 12.36 17.36C14.28 17.36 15.77 16.77 16.83 15.59C17.89 14.39 18.42 12.86 18.42 11C18.42 9.12 17.84 7.59 16.68 6.41C15.52 5.23 14.08 4.64 12.36 4.64C10.6 4.64 9.15 5.23 8.01 6.41C6.87 7.57 6.3 9.1 6.3 11ZM24.1184 5V0.499999H41.5184V5H35.2184V21.5H30.4184V5H24.1184ZM44.5066 21.5V0.499999H56.9566V5H49.3066V8.69H56.0566V13.19H49.3066V17H57.2566V21.5H44.5066ZM73.5525 21.5V5H68.9325L68.4825 8.96C68.1625 11.7 67.7625 13.95 67.2825 15.71C66.8025 17.45 66.1825 18.78 65.4225 19.7C64.6825 20.6 63.8625 21.18 62.9625 21.44C62.0625 21.7 60.9625 21.72 59.6625 21.5L59.7525 16.7C60.1525 16.78 60.5025 16.78 60.8025 16.7C61.1025 16.62 61.4325 16.37 61.7925 15.95C62.1525 15.51 62.4625 14.88 62.7225 14.06C63.0025 13.22 63.2625 12.01 63.5025 10.43C63.7625 8.85 63.9725 6.94 64.1325 4.7L64.4325 0.499999H78.3525V21.5H73.5525ZM90.0045 11.45C89.7045 11.45 89.2245 11.5 88.5645 11.6V16.94C89.2845 17.02 89.7545 17.06 89.9745 17.06C92.1745 17.06 93.2745 16.09 93.2745 14.15C93.2745 12.35 92.1845 11.45 90.0045 11.45ZM88.5645 0.499999V7.07C89.2245 6.99 89.8445 6.95 90.4245 6.95C93.0845 6.95 95.0745 7.58 96.3945 8.84C97.7145 10.08 98.3745 11.81 98.3745 14.03C98.3745 16.33 97.5945 18.16 96.0345 19.52C94.4745 20.88 92.2645 21.56 89.4045 21.56C88.6045 21.56 87.5445 21.55 86.2245 21.53C84.9245 21.51 84.1045 21.5 83.7645 21.5V0.499999H88.5645Z" fill="#222222"/>
         <path d="M114.5 21.5H109.7V0.499999C110.06 0.499999 111.07 0.489999 112.73 0.469999C114.41 0.449999 115.54 0.439999 116.12 0.439999C119.1 0.439999 121.26 1.1 122.6 2.42C123.94 3.72 124.61 5.38 124.61 7.4C124.61 9.36 123.9 11.03 122.48 12.41C121.06 13.77 119.18 14.45 116.84 14.45C115.78 14.45 115 14.42 114.5 14.36V21.5ZM116.6 4.94C116.52 4.94 115.82 4.96 114.5 5V9.8C115.26 9.9 115.99 9.95 116.69 9.95C117.45 9.95 118.11 9.75 118.67 9.35C119.23 8.95 119.51 8.29 119.51 7.37C119.51 5.75 118.54 4.94 116.6 4.94ZM128.509 21.5V0.499999H140.959V5H133.309V8.69H140.059V13.19H133.309V17H141.259V21.5H128.509ZM144.264 11C144.264 7.9 145.294 5.32 147.354 3.26C149.434 1.18 152.124 0.14 155.424 0.14C158.684 0.14 161.354 1.13 163.434 3.11C165.534 5.09 166.584 7.72 166.584 11C166.584 14.16 165.524 16.76 163.404 18.8C161.304 20.84 158.644 21.86 155.424 21.86C152.164 21.86 149.484 20.87 147.384 18.89C145.304 16.91 144.264 14.28 144.264 11ZM149.364 11C149.364 12.8 149.954 14.31 151.134 15.53C152.314 16.75 153.744 17.36 155.424 17.36C157.344 17.36 158.834 16.77 159.894 15.59C160.954 14.39 161.484 12.86 161.484 11C161.484 9.12 160.904 7.59 159.744 6.41C158.584 5.23 157.144 4.64 155.424 4.64C153.664 4.64 152.214 5.23 151.074 6.41C149.934 7.57 149.364 9.1 149.364 11ZM175.291 21.5H170.491V0.499999C170.851 0.499999 171.861 0.489999 173.521 0.469999C175.201 0.449999 176.331 0.439999 176.911 0.439999C179.891 0.439999 182.051 1.1 183.391 2.42C184.731 3.72 185.401 5.38 185.401 7.4C185.401 9.36 184.691 11.03 183.271 12.41C181.851 13.77 179.971 14.45 177.631 14.45C176.571 14.45 175.791 14.42 175.291 14.36V21.5ZM177.391 4.94C177.311 4.94 176.611 4.96 175.291 5V9.8C176.051 9.9 176.781 9.95 177.481 9.95C178.241 9.95 178.901 9.75 179.461 9.35C180.021 8.95 180.301 8.29 180.301 7.37C180.301 5.75 179.331 4.94 177.391 4.94ZM189.3 21.5V0.499999H194.1V17H202.65V21.5H189.3ZM205.647 21.5V0.499999H218.097V5H210.447V8.69H217.197V13.19H210.447V17H218.397V21.5H205.647Z" fill="#1BA5B5"/>
       </svg>
@@ -45,30 +68,33 @@
       </nav>
 
       <div class="menu-contacts header__contacts">
+        <div class="menu-contacts__address">
+          г. Чебоксары, пр-т Максима Горького 7
+        </div>
         <div class="menu-contacts__phone">
           <a href="tel:+78352450037">+7 (8352) 45-00-37</a>
         </div>
         <div class="menu-contacts__mail">
           <a href="mailto:hotel_people@mail.ru">hotel_people@mail.ru</a>
         </div>
-        <!-- <div class="menu-contacts__address">
-          г. Чебоксары, пр-т Максима Горького 7
-        </div> -->
+
         <div class="menu-contacts__socials">
-          <a href="https://wa.me/79053400030" target="_blank" class="menu-contacts__social">
-            WhatsApp
+          <a href="https://wa.me/79053400030" target="_blank" class="menu-contacts__social"><img width="50" alt="WhatsApp" src="../images/wa.png" height="50" title="WhatsApp" loading="lazy">
           </a>
           <a href="https://viber.click/79053400030" target="_blank" class="menu-contacts__social">
-            Viber
+            <img width="50" alt="Viber" src="../images/v.png" height="50" title="Viber" loading="lazy">
           </a>
-          <a href="https://t.me/hotel_people" target="_blank" class="menu-contacts__social">
-            Telegram
+          <a href="https://t.me/hotel_people" target="_blank" class="menu-contacts__social"><img width="50" alt="Telegram" src="../images/tg.png" height="50" title="Telegram" loading="lazy">
           </a>
         </div>
+        <a href="#" class="button button--accent menu-contacts__order">
+          Забронировать
+        </a>
       </div>
     </div>
     <button class="button button--accent header__order">Забронировать</button>
     <div class="header__hamburger">
+      <span></span>
       <span></span>
       <span></span>
       <span></span>
@@ -104,43 +130,45 @@
         <div class="splide room-carousel room__carousel" aria-label="Номер">
           <div class="splide-square-arrows splide__arrows">
             <button class="splide__arrow splide__arrow--prev">
-              <img width="18" alt="Переключиться на предыдущий слайд" src="images/slider-arr-left.png" height="18" title="Переключиться на предыдущий слайд" loading="lazy">
+              <img width="18" alt="Переключиться на предыдущий слайд" src="../images/slider-arr-left.png" height="18" title="Переключиться на предыдущий слайд" loading="lazy">
             </button>
             <button class="splide__arrow splide__arrow--next">
-              <img width="18" alt="Переключиться на следующий слайд" src="images/slider-arr-right.png" height="18" title="Переключиться на следующий слайд" loading="lazy">
+              <img width="18" alt="Переключиться на следующий слайд" src="../images/slider-arr-right.png" height="18" title="Переключиться на следующий слайд" loading="lazy">
             </button>
           </div>
           <div class="splide__track">
             <ul class="splide__list">
               <li class="radius-10 splide__slide room-carousel__slide">
-                <picture>
-                  <source srcset="images/room/1.webp" type="image/webp">
-                  <img width="2034" alt="Добро пожаловать" src="images/room/1.png" height="958" title="Добро пожаловать" loading="lazy" class="cover-img">
-                </picture>
+                <a href="../../images/room/1.png" data-fancybox="комнаты" data-caption="Название комнаты">
+                  <picture>
+                    <source srcset="../../images/room/1.webp" type="image/webp">
+                    <img width="2034" alt="Добро пожаловать" src="../../images/room/1.png" height="958" title="Добро пожаловать" loading="lazy" class="cover-img">
+                  </picture>
+                </a>
               </li>
               <li class="radius-10 splide__slide room-carousel__slide">
-                <picture>
-                  <source srcset="images/room/2.webp" type="image/webp">
-                  <img width="2034" alt="Добро пожаловать" src="images/room/2.png" height="958" title="Добро пожаловать" loading="lazy" class="cover-img">
-                </picture>
+                <a href="../../images/room/2.png" data-fancybox="комнаты" data-caption="Название комнаты">
+                  <picture>
+                    <source srcset="../../images/room/2.webp" type="image/webp">
+                    <img width="2034" alt="Добро пожаловать" src="../../images/room/2.png" height="958" title="Добро пожаловать" loading="lazy" class="cover-img"> </picture></a>
               </li>
               <li class="radius-10 splide__slide room-carousel__slide">
-                <picture>
-                  <source srcset="images/room/3.webp" type="image/webp">
-                  <img width="2034" alt="Добро пожаловать" src="images/room/3.png" height="958" title="Добро пожаловать" loading="lazy" class="cover-img">
-                </picture>
+                <a href="../../images/room/3.png" data-fancybox="комнаты" data-caption="Название комнаты">
+                  <picture>
+                    <source srcset="../../images/room/3.webp" type="image/webp">
+                    <img width="2034" alt="Добро пожаловать" src="../../images/room/3.png" height="958" title="Добро пожаловать" loading="lazy" class="cover-img"> </picture></a>
               </li>
               <li class="radius-10 splide__slide room-carousel__slide">
-                <picture>
-                  <source srcset="images/room/4.webp" type="image/webp">
-                  <img width="2034" alt="Добро пожаловать" src="images/room/4.png" height="958" title="Добро пожаловать" loading="lazy" class="cover-img">
-                </picture>
+                <a href="../../images/room/4.png" data-fancybox="комнаты" data-caption="Название комнаты">
+                  <picture>
+                    <source srcset="../../images/room/4.webp" type="image/webp">
+                    <img width="2034" alt="Добро пожаловать" src="../../images/room/4.png" height="958" title="Добро пожаловать" loading="lazy" class="cover-img"> </picture></a>
               </li>
               <li class="radius-10 splide__slide room-carousel__slide">
-                <picture>
-                  <source srcset="images/room/5.webp" type="image/webp">
-                  <img width="2034" alt="Добро пожаловать" src="images/room/5.png" height="958" title="Добро пожаловать" loading="lazy" class="cover-img">
-                </picture>
+                <a href="../../images/room/5.png" data-fancybox="комнаты" data-caption="Название комнаты">
+                  <picture>
+                    <source srcset="../../images/room/5.webp" type="image/webp">
+                    <img width="2034" alt="Добро пожаловать" src="../../images/room/5.png" height="958" title="Добро пожаловать" loading="lazy" class="cover-img"> </picture></a>
               </li>
             </ul>
           </div>
@@ -151,28 +179,28 @@
             <ul class="splide__list">
               <li class="radius-10 splide__slide room-thumb__slide">
                 <picture>
-                  <source srcset="images/room/1.webp" type="image/webp">
-                  <img width="198" alt="Добро пожаловать - миниаютюра" src="images/room/1.webp" height="310" title="Добро пожаловать - миниаютюра" loading="lazy" class="cover-img"></picture>
+                  <source srcset="../../images/room/1.webp" type="image/webp">
+                  <img width="198" alt="Добро пожаловать - миниаютюра" src="../../images/room/1.webp" height="310" title="Добро пожаловать - миниаютюра" loading="lazy" class="cover-img"></picture>
               </li>
               <li class="radius-10 splide__slide room-thumb__slide">
                 <picture>
-                  <source srcset="images/room/3.webp" type="image/webp">
-                  <img width="198" alt="Добро пожаловать - миниаютюра" src="images/room/2.webp" height="310" title="Добро пожаловать - миниаютюра" loading="lazy" class="cover-img"></picture>
+                  <source srcset="../../images/room/3.webp" type="image/webp">
+                  <img width="198" alt="Добро пожаловать - миниаютюра" src="../../images/room/2.webp" height="310" title="Добро пожаловать - миниаютюра" loading="lazy" class="cover-img"></picture>
               </li>
               <li class="radius-10 splide__slide room-thumb__slide">
                 <picture>
-                  <source srcset="images/room/3.webp" type="image/webp">
-                  <img width="198" alt="Добро пожаловать - миниаютюра" src="images/room/3.webp" height="310" title="Добро пожаловать - миниаютюра" loading="lazy" class="cover-img"></picture>
+                  <source srcset="../../images/room/3.webp" type="image/webp">
+                  <img width="198" alt="Добро пожаловать - миниаютюра" src="../../images/room/3.webp" height="310" title="Добро пожаловать - миниаютюра" loading="lazy" class="cover-img"></picture>
               </li>
               <li class="radius-10 splide__slide room-thumb__slide">
                 <picture>
-                  <source srcset="images/room/4.webp" type="image/webp">
-                  <img width="198" alt="Добро пожаловать - миниаютюра" src="images/room/4.webp" height="310" title="Добро пожаловать - миниаютюра" loading="lazy" class="cover-img"></picture>
+                  <source srcset="../../images/room/4.webp" type="image/webp">
+                  <img width="198" alt="Добро пожаловать - миниаютюра" src="../../images/room/4.webp" height="310" title="Добро пожаловать - миниаютюра" loading="lazy" class="cover-img"></picture>
               </li>
               <li class="radius-10 splide__slide room-thumb__slide">
                 <picture>
-                  <source srcset="images/room/5.webp" type="image/webp">
-                  <img width="198" alt="Добро пожаловать - миниаютюра" src="images/room/5.webp" height="310" title="Добро пожаловать - миниаютюра" loading="lazy" class="cover-img"></picture>
+                  <source srcset="../../images/room/5.webp" type="image/webp">
+                  <img width="198" alt="Добро пожаловать - миниаютюра" src="../../images/room/5.webp" height="310" title="Добро пожаловать - миниаютюра" loading="lazy" class="cover-img"></picture>
               </li>
             </ul>
           </div>
@@ -183,90 +211,91 @@
         <div class="semitransparent room__text">до 4 гостей · 14 м2</div>
         <div class="room__descr">
           Современно обставленные номера категории Econom созданы для
-          комфортного одноместного размещения гостя. <br> <br> Каждый такой номер – это
-          уютная спальня с 1 узкой кроватью, практичная ванная комната с
-          душевой, а также удобная рабочая зона. Гостю этого номера
-          предоставляется доступ к парковке.
+          комфортного одноместного размещения гостя. <br>
+          <br>
+          Каждый такой номер – это уютная спальня с 1 узкой кроватью, практичная
+          ванная комната с душевой, а также удобная рабочая зона. Гостю этого
+          номера предоставляется доступ к парковке.
         </div>
         <div class="room__prices">
           <div class="room__price">Цены от 2 850 руб/сутки</div>
-          <div class="semitransparent"> Стоимость за 1 человека</div>
+          <div class="semitransparent">Стоимость за 1 человека</div>
         </div>
         <a class="button button--accent room__booking">Забронировать</a>
         <div class="room__equipment">
           <div class="room__equipment-head">Оснащение номера</div>
           <div class="grid-block grid-block--2 room__equipment-list">
             <div class="room__equipment-item">
-              <img src="images/room/tel.svg" width="24" height="24" alt="Телевизор" title="Телевизор" loading="lazy">
+              <img src="../../images/room/tel.svg" width="24" height="24" alt="Телевизор" title="Телевизор" loading="lazy">
               <span>Телевизор</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/veshal.svg" width="24" height="24" alt="Вешалки" title="Вешалки" loading="lazy">
+              <img src="../../images/room/veshal.svg" width="24" height="24" alt="Вешалки" title="Вешалки" loading="lazy">
               <span>Вешалки</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/shkaf.svg" width="24" height="24" alt="Стенной шкаф или гардероб" title="Стенной шкаф или гардероб" loading="lazy">
+              <img src="../../images/room/shkaf.svg" width="24" height="24" alt="Стенной шкаф или гардероб" title="Стенной шкаф или гардероб" loading="lazy">
               <span>Стенной шкаф или гардероб</span>
             </div>
 
             <div class="room__equipment-item">
-              <img src="images/room/kuler.svg" width="24" height="24" alt="Кулер на этаже" title="Кулер на этаже" loading="lazy">
+              <img src="../../images/room/kuler.svg" width="24" height="24" alt="Кулер на этаже" title="Кулер на этаже" loading="lazy">
               <span>Кулер на этаже</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/stakan.svg" width="24" height="24" alt="Стаканы" title="Стаканы" loading="lazy">
+              <img src="../../images/room/stakan.svg" width="24" height="24" alt="Стаканы" title="Стаканы" loading="lazy">
               <span>Стаканы</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/polotenca.svg" width="24" height="24" alt="Банные полотенца" title="Банные полотенца" loading="lazy">
+              <img src="../../images/room/polotenca.svg" width="24" height="24" alt="Банные полотенца" title="Банные полотенца" loading="lazy">
               <span>Банные полотенца</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/skibidi.svg" width="24" height="24" alt="Санузел" title="Санузел" loading="lazy">
+              <img src="../../images/room/skibidi.svg" width="24" height="24" alt="Санузел" title="Санузел" loading="lazy">
               <span>Санузел</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/yhod.svg" width="24" height="24" alt="Косметические средства" title="Косметические средства" loading="lazy">
+              <img src="../../images/room/yhod.svg" width="24" height="24" alt="Косметические средства" title="Косметические средства" loading="lazy">
               <span> Косметические средства</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/holod.svg" width="24" height="24" alt="Мини-бар" title="Мини-бар" loading="lazy">
+              <img src="../../images/room/holod.svg" width="24" height="24" alt="Мини-бар" title="Мини-бар" loading="lazy">
               <span>Мини-бар</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/sysh.svg" width="24" height="24" alt="Фен" title="Фен" loading="lazy">
+              <img src="../../images/room/sysh.svg" width="24" height="24" alt="Фен" title="Фен" loading="lazy">
               <span>Фен</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/dysh.svg" width="24" height="24" alt="Душевая кабина" title=" Душевая кабина" loading="lazy">
+              <img src="../../images/room/dysh.svg" width="24" height="24" alt="Душевая кабина" title=" Душевая кабина" loading="lazy">
               <span> Душевая кабина</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/tapki.svg" width="24" height="24" alt="Тапочки" title="Тапочки" loading="lazy">
+              <img src="../../images/room/tapki.svg" width="24" height="24" alt="Тапочки" title="Тапочки" loading="lazy">
               <span> Тапочки</span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/wifi.svg" width="24" height="24" alt="Бесплатный Wi-Fi " title="Бесплатный Wi-Fi " loading="lazy">
+              <img src="../../images/room/wifi.svg" width="24" height="24" alt="Бесплатный Wi-Fi " title="Бесплатный Wi-Fi " loading="lazy">
               <span> Бесплатный Wi-Fi </span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/phone.svg" width="24" height="24" alt="Телефон " title="Телефон " loading="lazy">
+              <img src="../../images/room/phone.svg" width="24" height="24" alt="Телефон " title="Телефон " loading="lazy">
               <span> Телефон </span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/styl.svg" width="24" height="24" alt="Стулья " title="Стулья " loading="lazy">
+              <img src="../../images/room/styl.svg" width="24" height="24" alt="Стулья " title="Стулья " loading="lazy">
               <span> Стулья </span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/stol.svg" width="24" height="24" alt="Письменный стол " title="Письменный стол " loading="lazy">
+              <img src="../../images/room/stol.svg" width="24" height="24" alt="Письменный стол " title="Письменный стол " loading="lazy">
               <span> Письменный стол </span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/mirror.svg" width="24" height="24" alt="Зеркало " title="Зеркало" loading="lazy">
+              <img src="../../images/room/mirror.svg" width="24" height="24" alt="Зеркало " title="Зеркало" loading="lazy">
               <span>Зеркало </span>
             </div>
             <div class="room__equipment-item">
-              <img src="images/room/tymba.svg" width="24" height="24" alt="Тумбы " title="Тумбы" loading="lazy">
+              <img src="../../images/room/tymba.svg" width="24" height="24" alt="Тумбы " title="Тумбы" loading="lazy">
               <span>Тумбы </span>
             </div>
           </div>
@@ -279,7 +308,7 @@
 
      <!-- временно -->
      <div class="container" style="margin-bottom: 40px">
-        <img src="images/Overlay-1.png" width="1270" height="153" loading="lazy" alt="хех" title="хех">
+        <img src="../images/Overlay-1.png" width="1270" height="153" loading="lazy" alt="хех" title="хех">
       </div>
       <!-- !временно -->
 
@@ -289,8 +318,8 @@
             <div class="another-rooms__card room-card">
               <div class="radius-10 room-card__img">
                 <picture>
-                  <source srcset="images/r-1.webp" type="image/webp">
-                  <img width="412" alt="Эконом 1 категории" src="images/r-1.png" height="308" title="Эконом 1 категории" loading="lazy" class="cover-img"></picture>
+                  <source srcset="../images/r-1.webp" type="image/webp">
+                  <img width="412" alt="Эконом 1 категории" src="../images/r-1.png" height="308" title="Эконом 1 категории" loading="lazy" class="cover-img"></picture>
               </div>
               <div class="room-card__content">
                 <div class="room-card__info">
@@ -300,18 +329,18 @@
                 <div class="semitransparent room-card__text">до 4 гостей · 14 м2</div>
               </div>
               <div class="room-card__equipment">
-                <img src="images/room/tel.svg" width="24" height="24" alt="Телевизор" title="Телевизор" loading="lazy" data-tooltip>
-                <img src="images/room/shkaf.svg" width="24" height="24" alt="Стенной шкаф или гардероб" title="Стенной шкаф или гардероб" loading="lazy" data-tooltip>
-                <img src="images/room/polotenca.svg" width="24" height="24" alt="Банные полотенца" title="Банные полотенца" loading="lazy" data-tooltip>
-                <img src="images/room/skibidi.svg" width="24" height="24" alt="Санузел" title="Санузел" loading="lazy" data-tooltip>
-                <img src="images/room/yhod.svg" width="24" height="24" alt="Косметические средства" title="Косметические средства" loading="lazy" data-tooltip>
-                <img src="images/room/dysh.svg" width="24" height="24" alt="Душевая кабина" title="Душевая кабина" loading="lazy" data-tooltip>
-                <img src="images/room/tapki.svg" width="24" height="24" alt="Тапочки" title="Тапочки" loading="lazy" data-tooltip>
-                <img src="images/room/styl.svg" width="24" height="24" alt="Стулья" title="Стулья" loading="lazy" data-tooltip>
-                <img src="images/room/mirror.svg" width="24" height="24" alt="Зеркало" title="Зеркало" loading="lazy" data-tooltip>
-                <img src="images/room/sysh.svg" width="24" height="24" alt="Фен" title="Фен" loading="lazy" data-tooltip>
-                <img src="images/room/wifi.svg" width="24" height="24" alt="Бесплатный Wi-Fi" title="Бесплатный Wi-Fi" loading="lazy" data-tooltip>
-                <img src="images/room/holod.svg" width="24" height="24" alt="Мини-бар" title="Мини-бар" loading="lazy" data-tooltip>
+                <img src="../../images/room/tel.svg" width="24" height="24" alt="Телевизор" title="Телевизор" loading="lazy" data-tooltip>
+                <img src="../../images/room/shkaf.svg" width="24" height="24" alt="Стенной шкаф или гардероб" title="Стенной шкаф или гардероб" loading="lazy" data-tooltip>
+                <img src="../../images/room/polotenca.svg" width="24" height="24" alt="Банные полотенца" title="Банные полотенца" loading="lazy" data-tooltip>
+                <img src="../../images/room/skibidi.svg" width="24" height="24" alt="Санузел" title="Санузел" loading="lazy" data-tooltip>
+                <img src="../../images/room/yhod.svg" width="24" height="24" alt="Косметические средства" title="Косметические средства" loading="lazy" data-tooltip>
+                <img src="../../images/room/dysh.svg" width="24" height="24" alt="Душевая кабина" title="Душевая кабина" loading="lazy" data-tooltip>
+                <img src="../../images/room/tapki.svg" width="24" height="24" alt="Тапочки" title="Тапочки" loading="lazy" data-tooltip>
+                <img src="../../images/room/styl.svg" width="24" height="24" alt="Стулья" title="Стулья" loading="lazy" data-tooltip>
+                <img src="../../images/room/mirror.svg" width="24" height="24" alt="Зеркало" title="Зеркало" loading="lazy" data-tooltip>
+                <img src="../../images/room/sysh.svg" width="24" height="24" alt="Фен" title="Фен" loading="lazy" data-tooltip>
+                <img src="../../images/room/wifi.svg" width="24" height="24" alt="Бесплатный Wi-Fi" title="Бесплатный Wi-Fi" loading="lazy" data-tooltip>
+                <img src="../../images/room/holod.svg" width="24" height="24" alt="Мини-бар" title="Мини-бар" loading="lazy" data-tooltip>
               </div>
               <div class="grid-block grid-block--2 room-card__actions">
                 <a class="button button--accent room-card__booking">Забронировать</a>
@@ -321,8 +350,8 @@
             <div class="another-rooms__card room-card">
               <div class="radius-10 room-card__img">
                 <picture>
-                  <source srcset="images/r-2.webp" type="image/webp">
-                  <img width="412" alt="Эконом 1 категории" src="images/r-2.png" height="308" title="Эконом 1 категории" loading="lazy" class="cover-img"></picture>
+                  <source srcset="../images/r-2.webp" type="image/webp">
+                  <img width="412" alt="Эконом 1 категории" src="../images/r-2.png" height="308" title="Эконом 1 категории" loading="lazy" class="cover-img"></picture>
               </div>
               <div class="room-card__content">
                 <div class="room-card__info">
@@ -332,18 +361,18 @@
                 <div class="semitransparent room-card__text">до 4 гостей · 14 м2</div>
               </div>
               <div class="room-card__equipment">
-                <img src="images/room/tel.svg" width="24" height="24" alt="Телевизор" title="Телевизор" loading="lazy" data-tooltip>
-                <img src="images/room/shkaf.svg" width="24" height="24" alt="Стенной шкаф или гардероб" title="Стенной шкаф или гардероб" loading="lazy" data-tooltip>
-                <img src="images/room/polotenca.svg" width="24" height="24" alt="Банные полотенца" title="Банные полотенца" loading="lazy" data-tooltip>
-                <img src="images/room/skibidi.svg" width="24" height="24" alt="Санузел" title="Санузел" loading="lazy" data-tooltip>
-                <img src="images/room/yhod.svg" width="24" height="24" alt="Косметические средства" title="Косметические средства" loading="lazy" data-tooltip>
-                <img src="images/room/dysh.svg" width="24" height="24" alt="Душевая кабина" title="Душевая кабина" loading="lazy" data-tooltip>
-                <img src="images/room/tapki.svg" width="24" height="24" alt="Тапочки" title="Тапочки" loading="lazy" data-tooltip>
-                <img src="images/room/styl.svg" width="24" height="24" alt="Стулья" title="Стулья" loading="lazy" data-tooltip>
-                <img src="images/room/mirror.svg" width="24" height="24" alt="Зеркало" title="Зеркало" loading="lazy" data-tooltip>
-                <img src="images/room/sysh.svg" width="24" height="24" alt="Фен" title="Фен" loading="lazy" data-tooltip>
-                <img src="images/room/wifi.svg" width="24" height="24" alt="Бесплатный Wi-Fi" title="Бесплатный Wi-Fi" loading="lazy" data-tooltip>
-                <img src="images/room/holod.svg" width="24" height="24" alt="Мини-бар" title="Мини-бар" loading="lazy" data-tooltip>
+                <img src="../../images/room/tel.svg" width="24" height="24" alt="Телевизор" title="Телевизор" loading="lazy" data-tooltip>
+                <img src="../../images/room/shkaf.svg" width="24" height="24" alt="Стенной шкаф или гардероб" title="Стенной шкаф или гардероб" loading="lazy" data-tooltip>
+                <img src="../../images/room/polotenca.svg" width="24" height="24" alt="Банные полотенца" title="Банные полотенца" loading="lazy" data-tooltip>
+                <img src="../../images/room/skibidi.svg" width="24" height="24" alt="Санузел" title="Санузел" loading="lazy" data-tooltip>
+                <img src="../../images/room/yhod.svg" width="24" height="24" alt="Косметические средства" title="Косметические средства" loading="lazy" data-tooltip>
+                <img src="../../images/room/dysh.svg" width="24" height="24" alt="Душевая кабина" title="Душевая кабина" loading="lazy" data-tooltip>
+                <img src="../../images/room/tapki.svg" width="24" height="24" alt="Тапочки" title="Тапочки" loading="lazy" data-tooltip>
+                <img src="../../images/room/styl.svg" width="24" height="24" alt="Стулья" title="Стулья" loading="lazy" data-tooltip>
+                <img src="../../images/room/mirror.svg" width="24" height="24" alt="Зеркало" title="Зеркало" loading="lazy" data-tooltip>
+                <img src="../../images/room/sysh.svg" width="24" height="24" alt="Фен" title="Фен" loading="lazy" data-tooltip>
+                <img src="../../images/room/wifi.svg" width="24" height="24" alt="Бесплатный Wi-Fi" title="Бесплатный Wi-Fi" loading="lazy" data-tooltip>
+                <img src="../../images/room/holod.svg" width="24" height="24" alt="Мини-бар" title="Мини-бар" loading="lazy" data-tooltip>
               </div>
               <div class="grid-block grid-block--2 room-card__actions">
                 <a class="button button--accent room-card__booking">Забронировать</a>
@@ -353,8 +382,8 @@
             <div class="another-rooms__card room-card">
               <div class="radius-10 room-card__img">
                 <picture>
-                  <source srcset="images/r-3.webp" type="image/webp">
-                  <img width="412" alt="Эконом 1 категории" src="images/r-3.png" height="308" title="Эконом 1 категории" loading="lazy" class="cover-img"></picture>
+                  <source srcset="../images/r-3.webp" type="image/webp">
+                  <img width="412" alt="Эконом 1 категории" src="../images/r-3.png" height="308" title="Эконом 1 категории" loading="lazy" class="cover-img"></picture>
               </div>
               <div class="room-card__content">
                 <div class="room-card__info">
@@ -364,18 +393,18 @@
                 <div class="semitransparent room-card__text">до 4 гостей · 14 м2</div>
               </div>
               <div class="room-card__equipment">
-                <img src="images/room/tel.svg" width="24" height="24" alt="Телевизор" title="Телевизор" loading="lazy" data-tooltip>
-                <img src="images/room/shkaf.svg" width="24" height="24" alt="Стенной шкаф или гардероб" title="Стенной шкаф или гардероб" loading="lazy" data-tooltip>
-                <img src="images/room/polotenca.svg" width="24" height="24" alt="Банные полотенца" title="Банные полотенца" loading="lazy" data-tooltip>
-                <img src="images/room/skibidi.svg" width="24" height="24" alt="Санузел" title="Санузел" loading="lazy" data-tooltip>
-                <img src="images/room/yhod.svg" width="24" height="24" alt="Косметические средства" title="Косметические средства" loading="lazy" data-tooltip>
-                <img src="images/room/dysh.svg" width="24" height="24" alt="Душевая кабина" title="Душевая кабина" loading="lazy" data-tooltip>
-                <img src="images/room/tapki.svg" width="24" height="24" alt="Тапочки" title="Тапочки" loading="lazy" data-tooltip>
-                <img src="images/room/styl.svg" width="24" height="24" alt="Стулья" title="Стулья" loading="lazy" data-tooltip>
-                <img src="images/room/mirror.svg" width="24" height="24" alt="Зеркало" title="Зеркало" loading="lazy" data-tooltip>
-                <img src="images/room/sysh.svg" width="24" height="24" alt="Фен" title="Фен" loading="lazy" data-tooltip>
-                <img src="images/room/wifi.svg" width="24" height="24" alt="Бесплатный Wi-Fi" title="Бесплатный Wi-Fi" loading="lazy" data-tooltip>
-                <img src="images/room/holod.svg" width="24" height="24" alt="Мини-бар" title="Мини-бар" loading="lazy" data-tooltip>
+                <img src="../../images/room/tel.svg" width="24" height="24" alt="Телевизор" title="Телевизор" loading="lazy" data-tooltip>
+                <img src="../../images/room/shkaf.svg" width="24" height="24" alt="Стенной шкаф или гардероб" title="Стенной шкаф или гардероб" loading="lazy" data-tooltip>
+                <img src="../../images/room/polotenca.svg" width="24" height="24" alt="Банные полотенца" title="Банные полотенца" loading="lazy" data-tooltip>
+                <img src="../../images/room/skibidi.svg" width="24" height="24" alt="Санузел" title="Санузел" loading="lazy" data-tooltip>
+                <img src="../../images/room/yhod.svg" width="24" height="24" alt="Косметические средства" title="Косметические средства" loading="lazy" data-tooltip>
+                <img src="../../images/room/dysh.svg" width="24" height="24" alt="Душевая кабина" title="Душевая кабина" loading="lazy" data-tooltip>
+                <img src="../../images/room/tapki.svg" width="24" height="24" alt="Тапочки" title="Тапочки" loading="lazy" data-tooltip>
+                <img src="../../images/room/styl.svg" width="24" height="24" alt="Стулья" title="Стулья" loading="lazy" data-tooltip>
+                <img src="../../images/room/mirror.svg" width="24" height="24" alt="Зеркало" title="Зеркало" loading="lazy" data-tooltip>
+                <img src="../../images/room/sysh.svg" width="24" height="24" alt="Фен" title="Фен" loading="lazy" data-tooltip>
+                <img src="../../images/room/wifi.svg" width="24" height="24" alt="Бесплатный Wi-Fi" title="Бесплатный Wi-Fi" loading="lazy" data-tooltip>
+                <img src="../../images/room/holod.svg" width="24" height="24" alt="Мини-бар" title="Мини-бар" loading="lazy" data-tooltip>
               </div>
               <div class="grid-block grid-block--2 room-card__actions">
                 <a class="button button--accent room-card__booking">Забронировать</a>
@@ -391,25 +420,28 @@
   <div class="container">
     <div class="footer__top">
       <div class="menu-contacts footer__contacts">
+        <div class="menu-contacts__address">
+          г. Чебоксары, пр-т Максима Горького 7
+        </div>
         <div class="menu-contacts__phone">
           <a href="tel:+78352450037">+7 (8352) 45-00-37</a>
         </div>
         <div class="menu-contacts__mail">
           <a href="mailto:hotel_people@mail.ru">hotel_people@mail.ru</a>
         </div>
-        <!-- <div class="menu-contacts__address">
-          г. Чебоксары, пр-т Максима Горького 7
-        </div> -->
+
         <div class="menu-contacts__socials">
-          <a href="https://wa.me/79053400030" target="_blank" class="menu-contacts__social"><img width="50" alt="WhatsApp" src="images/wa.png" height="50" title="WhatsApp" loading="lazy">
+          <a href="https://wa.me/79053400030" target="_blank" class="menu-contacts__social"><img width="50" alt="WhatsApp" src="../images/wa.png" height="50" title="WhatsApp" loading="lazy">
           </a>
           <a href="https://viber.click/79053400030" target="_blank" class="menu-contacts__social">
-            <img width="50" alt="Viber" src="images/v.png" height="50" title="Viber" loading="lazy">
+            <img width="50" alt="Viber" src="../images/v.png" height="50" title="Viber" loading="lazy">
           </a>
-          <a href="https://t.me/hotel_people" target="_blank" class="menu-contacts__social"><img width="50" alt="Telegram" src="images/tg.png" height="50" title="Telegram" loading="lazy">
+          <a href="https://t.me/hotel_people" target="_blank" class="menu-contacts__social"><img width="50" alt="Telegram" src="../images/tg.png" height="50" title="Telegram" loading="lazy">
           </a>
         </div>
-        <button class="button button--accent footer__order">Забронировать</button>
+        <a href="#" class="button button--accent menu-contacts__order">
+          Забронировать
+        </a>
       </div>
       <div class="footer__nav">
         <div class="footer__nav-block">
@@ -437,8 +469,8 @@
     </div>
     <div class="footer__bottom">
       <div class="footer__bottom-block">
-        <div class="footer__logo">
-          <svg class="footer__logo-img" width="221" height="22" viewBox="0 0 221 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="logo footer__logo">
+          <svg class="logo__img" width="221" height="22" viewBox="0 0 221 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.2 11C1.2 7.9 2.23 5.32 4.29 3.26C6.37 1.18 9.06 0.14 12.36 0.14C15.62 0.14 18.29 1.13 20.37 3.11C22.47 5.09 23.52 7.72 23.52 11C23.52 14.16 22.46 16.76 20.34 18.8C18.24 20.84 15.58 21.86 12.36 21.86C9.1 21.86 6.42 20.87 4.32 18.89C2.24 16.91 1.2 14.28 1.2 11ZM6.3 11C6.3 12.8 6.89 14.31 8.07 15.53C9.25 16.75 10.68 17.36 12.36 17.36C14.28 17.36 15.77 16.77 16.83 15.59C17.89 14.39 18.42 12.86 18.42 11C18.42 9.12 17.84 7.59 16.68 6.41C15.52 5.23 14.08 4.64 12.36 4.64C10.6 4.64 9.15 5.23 8.01 6.41C6.87 7.57 6.3 9.1 6.3 11ZM24.1184 5V0.499999H41.5184V5H35.2184V21.5H30.4184V5H24.1184ZM44.5066 21.5V0.499999H56.9566V5H49.3066V8.69H56.0566V13.19H49.3066V17H57.2566V21.5H44.5066ZM73.5525 21.5V5H68.9325L68.4825 8.96C68.1625 11.7 67.7625 13.95 67.2825 15.71C66.8025 17.45 66.1825 18.78 65.4225 19.7C64.6825 20.6 63.8625 21.18 62.9625 21.44C62.0625 21.7 60.9625 21.72 59.6625 21.5L59.7525 16.7C60.1525 16.78 60.5025 16.78 60.8025 16.7C61.1025 16.62 61.4325 16.37 61.7925 15.95C62.1525 15.51 62.4625 14.88 62.7225 14.06C63.0025 13.22 63.2625 12.01 63.5025 10.43C63.7625 8.85 63.9725 6.94 64.1325 4.7L64.4325 0.499999H78.3525V21.5H73.5525ZM90.0045 11.45C89.7045 11.45 89.2245 11.5 88.5645 11.6V16.94C89.2845 17.02 89.7545 17.06 89.9745 17.06C92.1745 17.06 93.2745 16.09 93.2745 14.15C93.2745 12.35 92.1845 11.45 90.0045 11.45ZM88.5645 0.499999V7.07C89.2245 6.99 89.8445 6.95 90.4245 6.95C93.0845 6.95 95.0745 7.58 96.3945 8.84C97.7145 10.08 98.3745 11.81 98.3745 14.03C98.3745 16.33 97.5945 18.16 96.0345 19.52C94.4745 20.88 92.2645 21.56 89.4045 21.56C88.6045 21.56 87.5445 21.55 86.2245 21.53C84.9245 21.51 84.1045 21.5 83.7645 21.5V0.499999H88.5645Z" fill="#222222"/>
             <path d="M114.5 21.5H109.7V0.499999C110.06 0.499999 111.07 0.489999 112.73 0.469999C114.41 0.449999 115.54 0.439999 116.12 0.439999C119.1 0.439999 121.26 1.1 122.6 2.42C123.94 3.72 124.61 5.38 124.61 7.4C124.61 9.36 123.9 11.03 122.48 12.41C121.06 13.77 119.18 14.45 116.84 14.45C115.78 14.45 115 14.42 114.5 14.36V21.5ZM116.6 4.94C116.52 4.94 115.82 4.96 114.5 5V9.8C115.26 9.9 115.99 9.95 116.69 9.95C117.45 9.95 118.11 9.75 118.67 9.35C119.23 8.95 119.51 8.29 119.51 7.37C119.51 5.75 118.54 4.94 116.6 4.94ZM128.509 21.5V0.499999H140.959V5H133.309V8.69H140.059V13.19H133.309V17H141.259V21.5H128.509ZM144.264 11C144.264 7.9 145.294 5.32 147.354 3.26C149.434 1.18 152.124 0.14 155.424 0.14C158.684 0.14 161.354 1.13 163.434 3.11C165.534 5.09 166.584 7.72 166.584 11C166.584 14.16 165.524 16.76 163.404 18.8C161.304 20.84 158.644 21.86 155.424 21.86C152.164 21.86 149.484 20.87 147.384 18.89C145.304 16.91 144.264 14.28 144.264 11ZM149.364 11C149.364 12.8 149.954 14.31 151.134 15.53C152.314 16.75 153.744 17.36 155.424 17.36C157.344 17.36 158.834 16.77 159.894 15.59C160.954 14.39 161.484 12.86 161.484 11C161.484 9.12 160.904 7.59 159.744 6.41C158.584 5.23 157.144 4.64 155.424 4.64C153.664 4.64 152.214 5.23 151.074 6.41C149.934 7.57 149.364 9.1 149.364 11ZM175.291 21.5H170.491V0.499999C170.851 0.499999 171.861 0.489999 173.521 0.469999C175.201 0.449999 176.331 0.439999 176.911 0.439999C179.891 0.439999 182.051 1.1 183.391 2.42C184.731 3.72 185.401 5.38 185.401 7.4C185.401 9.36 184.691 11.03 183.271 12.41C181.851 13.77 179.971 14.45 177.631 14.45C176.571 14.45 175.791 14.42 175.291 14.36V21.5ZM177.391 4.94C177.311 4.94 176.611 4.96 175.291 5V9.8C176.051 9.9 176.781 9.95 177.481 9.95C178.241 9.95 178.901 9.75 179.461 9.35C180.021 8.95 180.301 8.29 180.301 7.37C180.301 5.75 179.331 4.94 177.391 4.94ZM189.3 21.5V0.499999H194.1V17H202.65V21.5H189.3ZM205.647 21.5V0.499999H218.097V5H210.447V8.69H217.197V13.19H210.447V17H218.397V21.5H205.647Z" fill="#1BA5B5"/>
           </svg>

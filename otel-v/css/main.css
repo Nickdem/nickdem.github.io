@@ -471,7 +471,7 @@ video {
   border: 0;
   padding: 0;
   vertical-align: baseline;
-  line-height: 100%;
+  line-height: 120%;
   font-size: 100%;
   font-weight: 400;
 }
@@ -1949,7 +1949,7 @@ ol {
 }
 
 .title-1 {
-  line-height: 100%;
+  line-height: 120%;
   font-size: 42px;
   font-weight: 800;
   text-transform: uppercase;
@@ -2137,14 +2137,14 @@ ol {
 .discount-item__title {
   font-weight: 800;
   font-size: 56px;
-  line-height: 100%;
+  line-height: 120%;
   text-transform: uppercase;
 }
 
 .discount-item__subtitle {
   font-weight: 700;
   font-size: 36px;
-  line-height: 100%;
+  line-height: 120%;
   text-transform: lowercase;
 }
 
@@ -2685,13 +2685,13 @@ ol {
 }
 
 .home-room__title {
-  line-height: 100%;
+  line-height: 120%;
   font-size: 18px;
   font-weight: 700;
 }
 
 .home-room__price {
-  line-height: 100%;
+  line-height: 120%;
   font-size: 16px;
   font-weight: 400;
 }
@@ -3043,7 +3043,7 @@ ol {
 
 .contacts__block-label {
   font-size: 18px;
-  line-height: 100%;
+  line-height: 120%;
   margin-bottom: 5px;
 }
 
@@ -3080,13 +3080,13 @@ ol {
 }
 
 .room-card__title {
-  line-height: 100%;
+  line-height: 120%;
   font-size: 18px;
   font-weight: 700;
 }
 
 .room-card__price {
-  line-height: 100%;
+  line-height: 120%;
   font-size: 16px;
   font-weight: 400;
 }
@@ -3156,7 +3156,7 @@ ol {
 }
 
 .room__price {
-  line-height: 100%;
+  line-height: 120%;
   font-size: 18px;
   font-weight: 700;
 }
@@ -3173,7 +3173,7 @@ ol {
 .room__equipment-head {
   font-weight: 700;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 120%;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -3443,7 +3443,7 @@ ol {
 .footer .menu-contacts__phone a {
   font-weight: 800;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 120%;
 }
 
 .footer .menu-contacts__address {
@@ -3573,7 +3573,7 @@ ol {
     display: -ms-flexbox;
     display: flex;
   }
-  .awards__row::-webkit-scrollbar {
+  .room-card__equipment::-webkit-scrollbar, .awards__row::-webkit-scrollbar {
     display: none;
   }
   .awards__item {
@@ -3767,6 +3767,48 @@ ol {
   .news__left .news__item {
     min-width: 360px;
   }
+  .news__item--big .news__item-img {
+    height: 202.5px;
+  }
+  .reviews-slide__card {
+    padding: 14px;
+  }
+  .contacts__block-icon svg {
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+  }
+  .contacts__block-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .contacts__block {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .contacts__block-label {
+    font-size: 14px;
+  }
+  .contacts__block-text {
+    font-size: 14px;
+  }
+  .contacts__block-btn a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  .contacts__block-booking {
+    padding: 12px 36px;
+  }
+  .bx-breadcrumb {
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .bx-breadcrumb::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3879,34 +3921,6 @@ ol {
     margin-bottom: 20px;
     border-radius: 0;
   }
-  .contacts__block-icon svg {
-    min-width: 20px;
-    max-width: 20px;
-    min-height: 20px;
-    max-height: 20px;
-  }
-  .contacts__block-icon {
-    width: 36px;
-    height: 36px;
-  }
-  .contacts__block {
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
-  }
-  .contacts__block-label {
-    font-size: 14px;
-  }
-  .contacts__block-text {
-    font-size: 14px;
-  }
-  .contacts__block-btn a {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-  .contacts__block-booking {
-    padding: 12px 36px;
-  }
   .room-card__actions {
     gap: 10px;
   }
@@ -3982,7 +3996,7 @@ ol {
   }
   .gallery-el,
   .gallery-el--small {
-    height: 240px;
+    height: 150px;
   }
   .contacts__block-btn a {
     padding: 8px;
@@ -3993,6 +4007,38 @@ ol {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 10px;
+  }
+  .news__left .news__item {
+    min-width: 260px;
+  }
+  .news__item--big .news__item-img {
+    height: 146.25px;
+  }
+  .news__item--big {
+    row-gap: 20px;
+  }
+  .news__item-title, .news__item--big .news__item-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .news__item-text {
+    font-size: 14px;
+  }
+  .hero__stories {
+    padding-top: 15px;
+  }
+  .about__gallery {
+    display: none;
+  }
+  .contacts__block-text {
+    padding-right: 30%;
+  }
+  .bx-breadcrumb {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .banquet__img {
+    height: 340px;
   }
 }
 
